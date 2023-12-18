@@ -3,4 +3,4 @@
 var urlParams = new URLSearchParams(window.location.search);
 var username = urlParams.get("username1");
 
-document.write(DOMPurify.sanitize("Hello to you!!!!, " + username + "!!!"));
+document.write("Hello to you!!!!, " + username + "!!!");
