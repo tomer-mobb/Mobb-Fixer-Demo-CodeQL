@@ -88,8 +88,8 @@ jobs:
       - name: Extract tgz
         uses: ihiroky/extract-action@v1
         with:
-          file_path: results
-          extract_dir: reports
+          file_path: results/codeql-res.zip
+          extract_dir: results
       - name: Run Mobb on the findings and get fixes
         if: always()
         uses: mobb-dev/action@v1
