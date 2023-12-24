@@ -94,6 +94,6 @@ jobs:
         if: always()
         uses: yhaggai/action@v1
         with:
-          report-file: reports/javascript.sarif
+          report-file: results/javascript.sarif
           api-key: ${{ secrets.MOBB_API_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
