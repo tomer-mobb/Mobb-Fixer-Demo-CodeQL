@@ -92,7 +92,7 @@ jobs:
           extract_dir: results
       - name: Run Mobb on the findings and get fixes
         if: always()
-        uses: yhaggai/action@v1.1
+        uses: yhaggai/action@v1.2
         with:
           report-file: results/javascript.sarif
           api-key: ${{ secrets.MOBB_API_TOKEN }}
