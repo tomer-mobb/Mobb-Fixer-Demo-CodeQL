@@ -93,8 +93,9 @@ jobs:
           extract_dir: results
       - name: Run Mobb on the findings and get fixes
         if: always()
-        uses: yhaggai/action@v4.3
+        uses: mobb-dev/review@beta_0.0.1
         with:
           report-file: results/javascript.sarif
           api-key: ${{ secrets.MOBB_API_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          scanner: codeql
