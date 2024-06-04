@@ -44,6 +44,7 @@ jobs:
         with:
           category: "/language:${{ matrix.language }}"
           output: results
+          upload: false
 
       - name: Run Mobb on the findings and get fixes
         if: always()
